@@ -4,10 +4,10 @@
 
 using namespace std;
 
-string bukovki(string g)
+int main()
 {
 	string s;
-	int l = 0, d = 0, f = 0, k = 0, h = 0, j = 0;
+	int l = 0, d = 0, f = 0, g = 0, h = 0, j = 0;
 	getline(cin,s);
 	s.length();
 	for (int p = 0; p < s.length(); p++)
@@ -19,20 +19,14 @@ string bukovki(string g)
 		if (s[p] == 'y')
 			f++;
 		if (s[p] == 'u')
-			k++;
+			g++;
 		if (s[p] == 'i')
 			h++;
 		if (s[p] == 'o')
 			j++;
 	}
-	cout << "a = " << l << " " << "e = " << d << " " << "y = " << f << " " << "u = " << k << " " << "i = " << h << " " << "o = " << j << endl;
-	return s;
-}
-
-int main()
-{
-	string s;
-    bukovki(s);
+	cout << "a = " << l << " " << "e = " << d << " " << "y = " << f << " " << "u = " << g << " " << "i = " << h << " " << "o = " << j << endl;
+	system("pause");
 	return 0;
 }
 

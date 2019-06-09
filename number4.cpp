@@ -6,7 +6,7 @@ using namespace std;
 
 string zaglavnie(string g)
 {
-	string s, a = "A", e = "E", y = "Y", u = "U", i = "I", o = "O";
+	string s;
 	getline(cin,s);
 	s.length();
 	for (int p = 0; p < s.length(); p++)
@@ -30,6 +30,7 @@ string zaglavnie(string g)
 int main()
 {
 	string g;
-	cout << zaglavnie(g);
+	zaglavnie(g);
+	return 0;
 }
 

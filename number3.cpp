@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	string s, a = "A", e = "E", y = "Y", u = "U", i = "I", o = "O";
+	string s;
 	getline(cin,s);
 	s.length();
 	for (int p = 0; p < s.length(); p++)

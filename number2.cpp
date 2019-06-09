@@ -4,35 +4,35 @@
 
 using namespace std;
 
-string bukovki(string g)
+string bukovki(string s, int w[6])
 {
-	string s;
-	int l = 0, d = 0, f = 0, k = 0, h = 0, j = 0;
-	getline(cin,s);
-	s.length();
+	for (int i = 0; i < 6; i++)
+		w[i] = 0;
 	for (int p = 0; p < s.length(); p++)
 	{
 		if (s[p] == 'a')
-			l++;
+			w[0]++;
 		if (s[p] == 'e')
-			d++;
+			w[1]++;
 		if (s[p] == 'y')
-			f++;
+			w[2]++;
 		if (s[p] == 'u')
-			k++;
+			w[3]++;
 		if (s[p] == 'i')
-			h++;
+			w[4]++;
 		if (s[p] == 'o')
-			j++;
+			w[5]++;
 	}
-	cout << "a = " << l << " " << "e = " << d << " " << "y = " << f << " " << "u = " << k << " " << "i = " << h << " " << "o = " << j << endl;
 	return s;
 }
 
 int main()
 {
 	string s;
-    bukovki(s);
+	int mas[6];
+	getline(cin,s);
+    bukovki(s,mas);
+    cout << "a = " << mas[0] << " " << "e = " << mas[1] << " " << "y = " << mas[2] << " " << "u = " << mas[3] << " " << "i = " << mas[4] << " " << "o = " << mas[5] << endl;
 	return 0;
 }
 

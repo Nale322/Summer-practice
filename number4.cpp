@@ -4,11 +4,8 @@
 
 using namespace std;
 
-string zaglavnie(string g)
+void zaglavnie(string &s)
 {
-	string s;
-	getline(cin,s);
-	s.length();
 	for (int p = 0; p < s.length(); p++)
 	{
 		if (s[p] == 'A')
@@ -24,13 +21,14 @@ string zaglavnie(string g)
 		if (s[p] == 'O')
 			s[p] = 'o';
 	}
-	cout << s << endl;
-	return s;
+	
 }
 int main()
 {
-	string g;
-	zaglavnie(g);
+	string alo;
+	getline(cin, alo);
+	zaglavnie(alo);
+	cout << alo << endl;
 	return 0;
 }
 

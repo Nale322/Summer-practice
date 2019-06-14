@@ -25,10 +25,21 @@ void zaglavnie(string &s)
 }
 int main()
 {
-	string alo("A E 3YYU");
+	string alo("A E 3YYUGT4IO");
 	zaglavnie(alo);
 	cout << alo << endl;
-	if (alo == "a e 3yyu")
+	if (alo == "a e 3yyuGT4io")
+	{
+		cout << "It's working" << endl;
+	}
+	else
+	{
+		cout << "Something went wrong" << endl;
+	}
+	string hey(" ");
+	zaglavnie(hey);
+	cout << "Space test: ";
+	if (hey == " ")
 	{
 		cout << "It's working" << endl;
 	}

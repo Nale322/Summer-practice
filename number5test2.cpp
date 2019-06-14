@@ -28,13 +28,25 @@ string bukovki(string s, int w[6])
 
 int main()
 {
-	string s("a a e y3y");
+	string s("a a e y3y uu1iii3oo");
 	int mas[6];
     bukovki(s,mas);
     cout << s << endl;
-    if (mas[0] == 2 && mas[1] == 1 && mas[2] == 2)
+    cout << "First test: ";
+    if (mas[0] == 2 && mas[1] == 1 && mas[2] == 2 && mas[3] == 2 && mas[4] == 3 && mas[5] == 2)
     {
-    	cout << "All is ok";
+    	cout << "All is ok" << endl;
+	}
+	else
+	{
+		cout << "Something went wrong" << endl;
+	}
+	string g(" ");
+	bukovki(g,mas);
+	cout << "Space test: ";
+	if (mas[0] == 0 && mas[1] == 0 && mas[2] == 0 && mas[3] == 0 && mas[4] == 0 && mas[5] == 0)
+    {
+    	cout << "All is ok" << endl;
 	}
 	else
 	{
